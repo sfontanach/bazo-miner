@@ -7,10 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"bytes"
-	"encoding/binary"
-	"github.com/bazo-blockchain/bazo-miner/protocol"
-	"golang.org/x/crypto/sha3"
+	"github.com/sfontanach/bazo-miner/protocol"
 )
 
 //Write and Read test on the seed json store

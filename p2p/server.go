@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/bazo-blockchain/bazo-miner/storage"
+	"github.com/sfontanach/bazo-miner/storage"
 	"log"
 	"net"
 	"strconv"
@@ -41,7 +41,7 @@ func Init(ipport string) {
 	go receiveBlockFromMiner()
 
 	//Set localPort global, this will be the listening port for incoming connection
-	if Ipport != storage.BOOTSTRAP_SERVER_PORT {
+	if Ipport != storage.BOOTSTRAP_SERVER {
 		bootstrap()
 	}
 
